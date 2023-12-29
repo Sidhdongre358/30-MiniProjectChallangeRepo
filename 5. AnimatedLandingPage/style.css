@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url("./images/pexels-simon-rizzi-1809644.jpg") center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading h1 {
+  color: white;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 200;
+  animation: moveLeftToRight 2s;
+}
+.heading span {
+  color: rgb(239, 36, 36);
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 100px;
+  text-transform: uppercase;
+  font-weight: 1000;
+  letter-spacing: 2px;
+}
+.info p {
+  font-size: 120px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+  animation: moveRightToLeft 2s;
+}
+
+button {
+  width: 220px;
+  height: 60px;
+  margin: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+  color: black;
+  background: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.left-btn {
+  animation: moveLeftToRight 10s;
+}
+.right-btn {
+  animation: moveLeftToRight 10s;
+}
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+button:hover {
+  transition: 0.2s linear;
+  border-color: rgb(52, 41, 76);
+  box-shadow: 0.1px 0.1px 2px white;
+  width: 210px;
+  height: 50px;
+}
