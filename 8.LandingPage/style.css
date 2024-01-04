@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+    url("./images/pexels-joshua-135018.jpg") center no-repeat;
+  background-size: cover;
+}
+.banner-text {
+  left: 35%;
+  position: absolute;
+  top: 30%;
+  visibility: visible;
+}
+.banner-text h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.bar {
+  width: 360px;
+  height: 3px;
+  transition: all 1s;
+}
+.start {
+  animation: barFiller 2s infinite;
+}
+
+.banner-text i {
+  color: white;
+  left: 50%;
+  position: absolute;
+  top: 80px;
+
+  animation: moveUpDowen 1s infinite;
+}
+
+@keyframes moveUpDowen {
+  0% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+.btn {
+  top: 100px;
+  left: 30%;
+  position: relative;
+}
+.btn button {
+  cursor: pointer;
+  color: white;
+  letter-spacing: 2px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: transparent;
+  width: 150px;
+  padding: 10px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+
+  border: 1.5px solid white;
+  transition: all 0.1s;
+}
+
+.btn button:hover {
+  transform: translateY(-3px);
+}
+.btn button:active {
+  transform: translateY(0);
+}
+
+.banner-wrapper {
+  width: 500px;
+  height: 400px;
+  background-color: aqua;
+  left: 30%;
+  position: absolute;
+  top: 10%;
+  box-shadow: 2px 3px 20px black;
+  visibility: hidden;
+}
+.content {
+  background-color: aquamarine;
+  background: url("./images/pexels-johannes-plenio-1632788.jpg") center
+    no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+  left: 50%;
+  text-align: center;
+  position: absolute;
+}
+.content h1 {
+  color: #eee;
+  font-weight: 300;
+  top: 35%;
+  position: absolute;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 2px;
+  padding: 10px 0 0 10px;
+}
+.form {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: rgb(0, 0, 0);
+}
+
+.x-btn {
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background-color: transparent;
+  color: #eee;
+  font-family: sans-serif;
+}
+.x-btn:hover {
+  transform: translateY(-3px);
+}
+.x-btn:active {
+  transform: translateY(0);
+}
+
+.form form {
+  margin: 0px 20px;
+  padding-top: 40%;
+}
+.form input {
+  width: 200px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+}
+
+.form button {
+  margin-top: 30px;
+  width: 180px;
+  border: none;
+  outline: none;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  background-color: transparent;
+  color: #eee;
+  border: 1.5px solid white;
+}
+/* adding js  */
+.changebg {
+  background: none;
+  background-color: pink;
+}
+.display {
+  visibility: visible;
+  opacity: 1;
+}
+.remove {
+  visibility: hidden;
+  opacity: 0;
+}
