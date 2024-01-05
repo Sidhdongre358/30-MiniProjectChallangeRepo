@@ -1,6 +1,8 @@
 const btton = document.querySelector(".btn");
-
+const unloadbtn = document.querySelector(".unload-btn");
 const postsConatainer = document.querySelector(".posts");
+const textHeading = document.getElementById("load-text");
+
 console.log(postsConatainer);
 
 // let's fetch data from the jsonplaceholder api's
@@ -22,6 +24,7 @@ const getPosts = async () => {
     let finalOutput = output.join("");
 
     postsConatainer.innerHTML = finalOutput;
+    textHeading.innerHTML = `<h2>Data fetched...<h2/>`;
   } catch (error) {
     console.log(error);
   }
@@ -29,8 +32,15 @@ const getPosts = async () => {
 
 // funtion to load posts
 const loadPost = () => {
-  console.log("clicked");
+  console.log("loaded");
   getPosts();
 };
+const unloadPost = () => {
+  console.log("unloaded");
+  textHeading.innerHTML = `<h2>Please click to fetch the Posts<h2/>`;
+  postsConatainer.innerHTML = null;
+};
+unloadPost();
 // add evemt listener to btn
 btton.addEventListener("click", loadPost);
+unloadbtn.addEventListener("click", unloadPost);
