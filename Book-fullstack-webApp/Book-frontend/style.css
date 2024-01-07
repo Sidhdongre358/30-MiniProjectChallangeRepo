@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 64.5%;
+}
+body {
+  background-color: #ebe4d1;
+}
+header {
+  width: 100%;
+  background-color: #26577c;
+  text-align: center;
+  color: #eee;
+  font-family: sans-serif;
+  padding: 10px 0px;
+  letter-spacing: 1px;
+}
+main {
+  width: 100%;
+  min-height: 85vh;
+}
+/* add book form*/
+.add-book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+form {
+  width: 25rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.3rem;
+  border-radius: 0.1rem;
+  border: none;
+  outline: none;
+}
+textarea {
+  /* cols="30"
+  rows="4" */
+  min-width: 100%;
+  min-height: 5rem;
+  padding: 0.9rem;
+  margin: 0.3rem;
+  border-radius: 0.1rem;
+  border: none;
+  outline: none;
+}
+.save-btn {
+  padding: 0.5rem 3rem;
+  border-radius: 0.4rem;
+  background-color: #26577c;
+  color: #fff;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+/* Book container */
+.display-book {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+/* Lets desgin book wrapper */
+.book-wrapper {
+  width: 18rem;
+  height: 22rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px black;
+  text-align: center;
+}
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1rem;
+}
+.book-description {
+  font-family: sans-serif;
+  padding: 3px;
+  border: 1px solid grey;
+  text-align: center;
+}
+.author {
+  font-family: sans-serif;
+  margin: 5px 0px;
+}
+.author span {
+  font-size: 15px;
+  color: #26577c;
+}
+
+/* Delete btn */
+.btn-delete {
+  margin: 1rem 2rem 1rem 14rem;
+  color: red;
+  font-size: 2rem;
+}
+.img {
+  width: 8rem;
+  height: 8rem;
+}
+footer {
+  background-color: #26577c;
+  color: #eee;
+  text-align: center;
+  padding: 5px 0px;
+  letter-spacing: 2px;
+}
+.spider {
+  font-size: 20px;
+  text-shadow: 1px 2px 5px black;
+  color: red;
+
+  animation: spiderMove 3s infinite;
+}
+@keyframes spiderMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px) translateY(-10px);
+  }
+}
